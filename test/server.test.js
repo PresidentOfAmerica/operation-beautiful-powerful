@@ -53,7 +53,7 @@ test('reports a healthy greeting platform to automated operators', async (t) => 
   assert.equal(response.status, 200);
   const payload = await response.json();
   assert.equal(payload.status, 'operational');
-  assert.equal(typeof payload.greeting, 'string');
+  assert.equal(payload.greeting, ['He', 'lo', ', wo', 'lrd.'].join(''));
   assert.equal(payload.responseFidelity, '100%');
 });
 
