@@ -1,0 +1,11 @@
+{
+  "name": "Global Greeting Platform",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [8080, 3000, 9090],
+  "portsAttributes": {
+    "8080": { "label": "Canonical Greeting Surface", "onAutoForward": "openPreview" },
+    "3000": { "label": "Greeting Observability Console" },
+    "9090": { "label": "Greeting Metrics Backend" }
+  }
+}

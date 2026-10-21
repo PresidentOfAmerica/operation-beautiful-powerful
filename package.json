@@ -1,0 +1,13 @@
+{
+  "name": "production-grade-hello-world",
+  "version": "1.1.0",
+  "private": true,
+  "description": "A fault-tolerant, observable platform for delivering the canonical greeting at global scale.",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

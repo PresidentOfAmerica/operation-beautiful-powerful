@@ -1,0 +1,24 @@
+name: Greeting concern
+description: Report a degradation in greeting delivery or fidelity.
+title: "[GREETING] "
+labels: ["greeting-reliability"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for helping protect a reliable first impression.
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed greeting
+      description: Copy the response exactly. Response-level accuracy matters.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Triage
+      options:
+        - label: I checked /health.
+          required: true
+        - label: I checked whether response fidelity is intact.
+          required: true
