@@ -23,6 +23,8 @@ test('delivers the canonical greeting on the primary presentation surface', asyn
   assert.match(body, /Validating approved greeting policy/);
   assert.match(body, /Approved greeting cleared for global delivery/);
   assert.match(body, /Final response presentation/);
+  assert.match(body, /translate\(24\.5vw,19vh\)/);
+  assert.match(body, /@media\(min-width:1600px\)/);
   assert.equal((body.match(/'PASS'|'APPROVED'/g) || []).length, 50);
   assert.match(body, /boot.classList.add\('exiting'\)/);
 });
